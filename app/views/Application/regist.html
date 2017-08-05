@@ -1,0 +1,20 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+</head>
+<body>
+<h1>用户注册</h1>
+<form action="@{Application.regist()}" method="get">
+  用户名：<input type="text" name="user.username" /><br/><br/>
+  密   码：<input type="password" name="user.password" /><br/><br/>
+  邮   箱：<input type="email" name="user.email" /><br/><br/>
+ <input type="submit" value="注册" />
+</form>
+</body>
+</html>

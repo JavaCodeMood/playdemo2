@@ -1,0 +1,16 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>${user}</h1>
+    <ul style="font-size:20px;">
+      <li><a href="@{Application.queryList()}">查询数据</a><br/></li>
+      <li><a href="@{Application.insertList()}">插入数据</a><br/></li>
+      <li><a href="@{Application.updateList()}">修改数据</a><br/></li>
+    </ul>
+  </body>
+</html>
